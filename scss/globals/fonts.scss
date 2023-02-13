@@ -1,0 +1,3 @@
+@mixin font-size {
+  font-size: clamp(0.875rem, 1vw, 1rem);
+}
