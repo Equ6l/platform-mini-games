@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
 section.game, section#banner {
   border-bottom: 1px solid rgba(208, 208, 208, 0.2);
 }
@@ -133,8 +134,10 @@ section li {
 section li::before {
   content: "→ ";
 }
-section button {
+section a {
+  font-size: 14px;
   letter-spacing: 1px;
+  text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
   padding: 10px;
@@ -144,7 +147,7 @@ section button {
   cursor: pointer;
   transition: transform 0.25s;
 }
-section button:hover {
+section a:hover {
   transform: scale(0.96);
 }
 section#banner {
@@ -158,7 +161,7 @@ section#banner p {
   text-align: center;
   padding: 32px 0;
 }
-section#banner button::after {
+section#banner a::after {
   content: " →";
 }
 section#section__color-secondary {
@@ -197,11 +200,14 @@ section.game .game__description {
   width: min(100% - 96px, 800px);
   gap: 32px;
 }
-section.game .game__description button {
+section.game .game__description a {
+  text-align: center;
+  text-decoration: none;
+  background-color: #5dc25d;
   width: min(20%, 1000px);
 }
 @media screen and (max-width: 700px) {
-  section.game .game__description button {
+  section.game .game__description a {
     width: 100%;
   }
 }
