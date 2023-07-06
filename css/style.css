@@ -215,7 +215,8 @@ section.game .game__description a {
 /* COMMENTS */
 .grid {
   display: grid;
-  width: 80%; /* width: min(100% - 40px, 1200px) Prend 100% de largeur - 40px de marges jusqu'à 1200px)*/
+  width: 80%;
+  /* width: min(100% - 40px, 1200px) Prend 100% de largeur - 40px de marges jusqu'à 1200px)*/
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 1fr 1fr;
   margin-inline: auto;
@@ -229,7 +230,8 @@ section.game .game__description a {
   }
 }
 .grid h1 {
-  grid-column: 1/4; /* start / end */
+  grid-column: 1/4;
+  /* start / end */
   margin: auto;
   padding-top: 32px;
 }
